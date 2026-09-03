@@ -1,0 +1,30 @@
+[project]
+name = "0xAgents"
+version = "0.1.0"
+description = "Durable, stateful, human-in-the-loop AI agent graphs — long-running flowchart agents in Python that remember, resume, and pause for approval"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "0xabhi13" }]
+maintainers = [{ name = "0xabhi13" }]
+keywords = ["ai-agents", "graph", "stateful", "durable-execution", "human-in-the-loop", "llm-orchestration"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/0xabhi13/0xAgents"
+Repository = "https://github.com/0xabhi13/0xAgents"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["agentgraph*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
